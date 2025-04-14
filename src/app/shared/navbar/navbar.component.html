@@ -1,0 +1,25 @@
+<!-- navbar.component.html -->
+<nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <span>Arte</span><span>mania</span>
+    </div>
+  
+    <!-- Enlaces -->
+    <div class="nav-links">
+      <a class="active" [routerLink]="'/'">Inicio</a>
+      <a [routerLink]="'/catalogo'">Catálogo</a>
+      <a [routerLink]="'/contacto'">Contáctanos</a>
+      <a [routerLink]="'/sobre-nosotros'">Sobre Nosotros</a>
+    </div>
+  
+    <!-- Icono carrito + botón -->
+    <div class="acciones">
+      <span class="cart-icon pi pi-shopping-cart"></span>
+      <button class="login-btn">
+        <i class="pi pi-user"></i>
+        Acceder
+      </button>
+    </div>
+  </nav>
+  
