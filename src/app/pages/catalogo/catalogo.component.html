@@ -1,12 +1,87 @@
 <app-navbar></app-navbar>
 
-<H1>sexooooo</H1>
-<H1>sexooooo</H1>
-<H1>sexooooo</H1>
-<H1>sexooooo</H1>
-<H1>sexooooo</H1>
-<H1>sexooooo</H1>
-<H1>sexooooo</H1>
-<H1>sexooooo</H1>
-<H1>sexooooo</H1>
+<!-- Banner de publicidad -->
+<section class="banner-catalogo">
+  <img src="https://images.pexels.com/photos/220320/pexels-photo-220320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Publicidad">
+  <div class="texto-banner">
+    <h2>Publicidad</h2>
+  </div>
+</section>
+
+<!-- Buscador -->
+<section class="buscador">
+  <input type="text" placeholder="Buscar un producto...">
+  <button><i class="pi pi-search"></i></button>
+</section>
+
+<!-- Catálogo -->
+<section class="catalogo">
+  <!-- Filtros -->
+  <aside class="filtros">
+    <h3>Buscar por</h3>
+    <ul>
+      <li>Todo</li>
+      <li>Nuevo</li>
+      <li>En oferta</li>
+    </ul>
+
+    <h3>Colores</h3>
+    <div class="colores">
+      <span class="color" style="background-color: #800080;"></span>
+      <span class="color" style="background-color: #00bfff;"></span>
+      <span class="color" style="background-color: #ff69b4;"></span>
+      <span class="color" style="background-color: #228b22;"></span>
+      <span class="color" style="background-color: #ff4500;"></span>
+    </div>
+
+    <h3>Más vendidos</h3>
+    <ul>
+      <li>Producto A</li>
+      <li>Producto B</li>
+    </ul>
+
+    <h3>Precio</h3>
+    <ul>
+      <li>Menos de $10</li>
+      <li>De $10 a $25</li>
+      <li>De $25 a $40</li>
+      <li>Más de $40</li>
+    </ul>
+  </aside>
+
+  <!-- Productos -->
+  <div class="productos">
+    <div class="header-productos">
+      <p>1026 productos encontrados</p>
+      <label>
+        Ordenar por:
+        <select>
+          <option>Precio</option>
+          <option>Más vendidos</option>
+          <option>Nuevos</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="grid-productos">
+      <div class="producto" *ngFor="let i of [1,2,3,4,5,6,7,8]">
+        <img src="https://images.pexels.com/photos/5554699/pexels-photo-5554699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <p>Pigmentos líquidos para velas</p>
+        <span>$2.00</span>
+        <small>Materias primas</small>
+      </div>
+      
+    </div>
+
+    <div class="paginacion">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>›</button>
+    </div>
+  </div>
+</section>
+
 <app-footer></app-footer>
