@@ -5,7 +5,7 @@
   <div class="texto">
     <h1>Bienvenidos a <span>ARTEMANIA</span>!</h1>
     <h2>Manualidades, cursos, talleres y más...</h2>
-    <button>Ver productos</button>
+    <button [routerLink]="'/catalogo'">Ver productos</button>
   </div>
   <img src="https://images.pexels.com/photos/5512621/pexels-photo-5512621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero imagen">
 </section>
@@ -20,7 +20,7 @@
 <section class="cursos">
   <div class="header">
     <h3>Cursos y talleres disponibles</h3>
-    <a href="#">Ver más ></a>
+    <a href="/catalogo">Ver mas</a>
   </div>
 
   <div class="carousel">
@@ -68,7 +68,7 @@
 <section class="productos-vendidos">
   <div class="header">
     <h3>Productos más vendidos</h3>
-    <a href="#">Ver más ></a>
+    <a href="/catalogo">Ver mas</a>
   </div>
 
   <div class="grid-productos">
