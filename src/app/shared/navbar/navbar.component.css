@@ -1,87 +1,104 @@
-/* navbar.component.css */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Navbar principal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-  }
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F2F2F2; /* fondo claro */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .logo {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .logo span:first-child {
-    color: magenta; /* "Arte" en color fuerte */
-  }
-  
-  .logo span:last-child {
-    color: #4a342e; /* "mania" en marrón oscuro */
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #464646;
-    font-size: 1.4rem;
-    font-weight: 600;
-    position: relative;
-  }
-  
-  .nav-links a.active {
-    color: purple;
-  }
-  
-  .nav-links a.active::after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: purple;
-  }
-  
-  .cart-icon {
-    font-size: 1.4rem;
-    margin-right: 1rem;
-    cursor: pointer;
-  }
-  
-  .login-btn {
-    background-color: #800080; /* morado */
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .login-btn:hover {
-    background-color: #5e005e;
-  }
-  
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo span:first-child {
+  color: magenta; /* "Arte" */
+}
+
+.logo span:last-child {
+  color: #4a342e; /* "mania" */
+}
+
+/* Enlaces del menú */
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #464646;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-links a.active {
+  color: purple;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: purple;
+}
+
+/* Botones a la derecha */
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Botón carrito */
+.cart-btn {
+  background-color: #dcd0e7;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: #c3a8e6;
+}
+
+/* Botón login */
+.login-btn {
+  background-color: #800080;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #5e005e;
+}
+
+/* Íconos de PrimeIcons */
+.pi {
+  font-size: 1.2rem;
+}

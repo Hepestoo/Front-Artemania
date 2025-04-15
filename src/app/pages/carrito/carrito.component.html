@@ -1,0 +1,64 @@
+<app-navbar></app-navbar>
+
+<h1 class="titulo">Tu Carrito</h1>
+
+<section class="carrito-container">
+  <!-- Lista de productos -->
+  <div class="carrito-lista">
+    <div class="producto" *ngFor="let i of [1,2,3]">
+      <p class="alerta">Este producto puede estar sujeto a cambios</p>
+      <div class="producto-info">
+        <img src="https://images.pexels.com/photos/7054410/pexels-photo-7054410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto">
+        <div class="detalles">
+          <p class="nombre">Pigmentos líquidos para velas individuales</p>
+          <div class="acciones">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+            <button class="btn-eliminar"><i class="pi pi-trash"></i></button>
+          </div>
+        </div>
+        <div class="precio">
+          <p class="valor">$7.27</p>
+          <small>Precio incluye IVA</small>
+        </div>
+      </div>
+    </div>
+
+    <p class="cargar-mas">Cargar más <i class="pi pi-chevron-down"></i></p>
+  </div>
+
+  <!-- Detalle de compra -->
+  <div class="carrito-resumen">
+    <h3>Detalle de la compra</h3>
+
+    <div class="resumen-productos">
+      <p class="total-item">Artículos totales:</p>
+      <div class="item" *ngFor="let i of [1,2]">
+        <p>Pigmentos líquidos para velas individuales</p>
+        <span>1x</span>
+        <span>$7.27</span>
+      </div>
+    </div>
+
+    <div class="opciones-envio">
+      <p><strong>Envío</strong></p>
+      <label><input type="radio" name="envio"> Efectivo</label>
+      <label><input type="radio" name="envio"> Recogida en el local</label>
+      <label><input type="radio" name="envio"> Coordinar envío</label>
+      <label><input type="radio" name="envio"> Envío por servientrega</label>
+      <label><input type="radio" name="envio"> Envío por cooperativa</label>
+    </div>
+
+    <div class="total">
+      <p>Precio total</p>
+      <h3>$45.27</h3>
+    </div>
+
+    <button class="btn-pago">Continuar con el pago</button>
+  </div>
+</section>
+
+<app-footer></app-footer>
