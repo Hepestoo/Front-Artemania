@@ -1,0 +1,125 @@
+.producto-detalle {
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .detalle-container {
+    display: flex;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .producto-img {
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .info {
+    flex: 1;
+  }
+  
+  .categoria {
+    color: #999;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .nombre {
+    font-size: 1.8rem;
+    margin: 0.3rem 0;
+  }
+  
+  .precio {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4a004a;
+  }
+  
+  .disponibilidad span {
+    font-weight: bold;
+    color: green;
+  }
+  
+  input[type="number"] {
+    padding: 0.3rem;
+    width: 80px;
+    margin: 0.5rem 0 1rem 0;
+  }
+  
+  .btn-comprar {
+    background-color: #800080;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .tabs {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  .tab-list {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tab {
+    font-weight: bold;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .tab.active {
+    color: purple;
+    border-bottom: 2px solid purple;
+  }
+  
+  .tab-content ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .sugerencias {
+    margin-top: 2rem;
+  }
+  
+  .recomendados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+  
+  .recomendados .producto {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 160px;
+    margin: auto;
+  }
+  
+  
+  .recomendados .producto img {
+    width: 100%;
+    max-width: 120px; /* Tamaño máximo deseado */
+    height: auto;
+    margin: 0 auto 0.5rem auto;
+    display: block;
+    object-fit: contain;
+  }

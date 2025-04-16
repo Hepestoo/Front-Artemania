@@ -1,0 +1,75 @@
+<app-navbar></app-navbar>
+
+<section class="producto-detalle">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <span>Categorías</span> &gt; 
+    <span>Scrapbooking</span> &gt; 
+    <strong>Colores</strong>
+  </div>
+
+  <!-- Vista principal -->
+  <div class="detalle-container">
+    <img class="producto-img" src="https://images.pexels.com/photos/31584169/pexels-photo-31584169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto">
+
+    <div class="info">
+      <p class="categoria">Scrapbooking</p>
+      <h2 class="nombre">Molde de silicona lilo and stitch</h2>
+      <p class="precio">$7.00</p>
+      <p class="disponibilidad">Disponibilidad: <span class="disponible">Sí está disponible</span></p>
+
+      <label for="cantidad">Cantidad</label>
+      <input type="number" id="cantidad" min="1" value="1">
+
+      <button class="btn-comprar">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <div class="tab-list">
+      <p class="tab active">Descripción del producto</p>
+      <p class="tab">Comentarios</p>
+      <p class="tab">Información adicional</p>
+    </div>
+
+    <div class="tab-content">
+      <h4>Cada molde incluye un espejo</h4>
+      <p>Crea espejos únicos y personalizados con este molde de silicona para resina...</p>
+      <h4>Características</h4>
+      <ul>
+        <li>Material: Silicona de alta calidad, flexible y duradera.</li>
+        <li>Resistente: Al calor y al frío, no se deforma ni se rompe.</li>
+        <li>Fácil desmoldado: Gracias a su textura antiadherente.</li>
+        <li>Compatibilidad: Funciona con resina epoxi, poliéster, UV.</li>
+      </ul>
+      <h4>¿Cómo usarlo?</h4>
+      <ul>
+        <li>Preparación: Asegúrate de que el molde esté limpio.</li>
+        <li>Mezcla de resina, vertido, curado, desmoldado.</li>
+      </ul>
+      <h4>Consejos</h4>
+      <ul>
+        <li>Aplica calor para evitar burbujas.</li>
+        <li>Lija los bordes para acabado suave.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sugerencias -->
+  <section class="sugerencias">
+    <h3>Artículos que te podrían interesar</h3>
+    <div class="recomendados">
+      <div class="producto" *ngFor="let i of [1,2,3,4]">
+        <img src="https://images.pexels.com/photos/5095285/pexels-photo-5095285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <p>Pigmentos líquidos para velas</p>
+        <p>$2.00</p>
+        <small>Materias primas</small>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<app-footer></app-footer>
